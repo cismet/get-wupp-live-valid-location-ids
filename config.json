@@ -1,0 +1,6 @@
+{
+	"selector": "select[name=stage]",
+	"replacements": [ { "from": "film_", "to": "" }, { "from": "O", "to": "0" } ],
+	"outDataPath": null,
+	"outDataSqlPath": "queries/_wupp_live_valid_location_ids_insert.sql"
+}
