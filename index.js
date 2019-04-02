@@ -7,6 +7,7 @@ console.log('### started');
 let today = new Date();
 
 let defaultConfig = {
+	url: 'https://www.wuppertal-live.de/',
 	selector: 'select[name=stage]',
 	replacements: [ { from: 'film_', to: '' }, { from: 'O', to: '0' } ],
 	outDataPath: 'out/data.json',
@@ -24,7 +25,7 @@ try {
 
 const config = parsedConfig || defaultConfig;
 
-fetch('https://www.wuppertal-live.de/')
+fetch(config.url)
 	.then((response) => {
 		console.log('response', response.status);
 

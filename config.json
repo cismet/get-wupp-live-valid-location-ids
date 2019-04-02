@@ -1,4 +1,5 @@
 {
+	"url": "https://www.wuppertal-live.de/",
 	"selector": "select[name=stage]",
 	"replacements": [ { "from": "film_", "to": "" }, { "from": "O", "to": "0" } ],
 	"outDataPath": null,
